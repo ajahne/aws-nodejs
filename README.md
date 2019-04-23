@@ -28,6 +28,7 @@ node create-instances.js
 - [Creating an Instance](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/ec2-example-creating-an-instance.html)
 - [EC2 Run Instances](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/EC2.html#runInstances-property)
 - [EC2 Stop Instances](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/EC2.html#stopInstances-property)
+- [EC2 Terminate Instances](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/EC2.html#terminateInstances-property)
 - [EC2 Create Image](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/EC2.html#createImage-property)
 - [EC2 Copy Image](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/EC2.html#copyImage-property)
 - [EC2 Device Naming](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/device_naming.html)
