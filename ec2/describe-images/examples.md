@@ -53,3 +53,29 @@ ec2.describeImages(params, function(err, data) {
   }  
 });
 ```
+
+## Example: Find the current Amazon Linux AMI
+```javascript
+const params = {
+  DryRun:false,
+  Filters: [
+    {
+      Name: 'name',
+      Values: [        
+        'amzn-ami-hvm-????.??.?.????????-x86_64-gp2'
+      ]
+    },
+    {
+      Name: 'state',
+      Values: [
+        'available'
+      ]
+    },
+    /* more items */
+  ],
+  Owners: [
+    'amazon',
+    /* more items */
+  ]  
+ };
+```
