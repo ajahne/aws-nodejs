@@ -80,6 +80,30 @@ const params = {
  };
 ```
 
+## Exampple: Find the current Ubuntu Server 16.04 LTS AMI
+```javascript
+const params = {
+  DryRun:false,
+  Filters: [
+    {
+      Name: 'name',
+      Values: [
+        'ubuntu/images/hvm-ssd/ubuntu-xenial-16.04-amd64-server-????????'
+      ]
+    },
+    {
+      Name: 'state',
+      Values: [
+        'available'
+      ]
+    },
+  ],
+  Owners: [
+    '099720109477',
+  ]  
+ };
+```
+
 ## Example: Find the 2019 Ubuntu Bionic Servers 
 ```javascript
 const params = {
