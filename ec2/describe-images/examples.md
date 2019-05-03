@@ -1,3 +1,6 @@
+# Describe Amazon Machine Images
+Node.js examples of `describeImages` based off Amazon's [Finding a Linux AMI](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/finding-an-ami.html) documentation. 
+
 ## Example: Find the current Amazon Linux 2 AMI
 ```javascript
 const AWS = require('aws-sdk');
