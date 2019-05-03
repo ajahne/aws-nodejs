@@ -127,3 +127,27 @@ const params = {
   ]  
  };
 ```
+
+## Example: Find the current Red Hat Enterprise Linux 7.5 AMI
+```javascript
+const params = {
+  DryRun:false,
+  Filters: [
+    {
+      Name: 'name',
+      Values: [
+        'RHEL-7.5_HVM_GA*'
+      ]
+    },
+    {
+      Name: 'state',
+      Values: [
+        'available'
+      ]
+    },
+  ],
+  Owners: [
+    '309956199498',
+  ]  
+ };
+```
