@@ -79,3 +79,27 @@ const params = {
   ]  
  };
 ```
+
+## Example: Find the 2019 Ubuntu Bionic Servers 
+```javascript
+const params = {
+  DryRun:false,
+  Filters: [
+    {
+      Name: 'name',
+      Values: [
+        'ubuntu/images/hvm-ssd/ubuntu-bionic-18.04-amd64-server-2019????'
+      ]
+    },
+    {
+      Name: 'state',
+      Values: [
+        'available'
+      ]
+    },
+  ],
+  Owners: [
+    '099720109477',
+  ]  
+ };
+```
