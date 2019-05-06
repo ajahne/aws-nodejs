@@ -29,18 +29,18 @@ ec2.describeSubnets(params, function(err, data) {
 
 //Example output:
 /*
- data = {
+data = {
   Subnets: [
-     {
-    AvailabilityZone: "us-west-2c", 
-    AvailableIpAddressCount: 251, 
-    CidrBlock: "10.0.1.0/24", 
-    DefaultForAz: false, 
-    MapPublicIpOnLaunch: false, 
-    State: "available", 
-    SubnetId: "subnet-9d4a7b6c", 
-    VpcId: "vpc-a01106c2"
-   }
+    {
+      AvailabilityZone: "us-west-2c", 
+      AvailableIpAddressCount: 251, 
+      CidrBlock: "10.0.1.0/24", 
+      DefaultForAz: false, 
+      MapPublicIpOnLaunch: false, 
+      State: "available", 
+      SubnetId: "subnet-9d4a7b6c", 
+      VpcId: "vpc-a01106c2"
+    }
   ]
- }
- */
+}
+*/
