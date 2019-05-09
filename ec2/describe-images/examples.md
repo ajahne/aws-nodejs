@@ -80,7 +80,7 @@ const params = {
  };
 ```
 
-## Exampple: Find the current Ubuntu Server 16.04 LTS AMI
+## Example: Find the current Ubuntu Server 16.04 LTS AMI
 ```javascript
 const params = {
   DryRun:false,
