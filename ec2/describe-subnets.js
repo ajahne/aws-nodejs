@@ -1,6 +1,5 @@
 //load AWS SDK
 const AWS = require('aws-sdk');
-const fs = require("fs");
 
 //set the region, going to perform tests in Oregon
 AWS.config.update({region:'us-west-2'});
