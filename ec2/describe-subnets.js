@@ -1,10 +1,11 @@
+//load AWS SDK
 const AWS = require('aws-sdk');
 const fs = require("fs");
 
-//set the region, going to perform tests in oregon
+//set the region, going to perform tests in Oregon
 AWS.config.update({region:'us-west-2'});
 
-//create ec2
+//create EC2 service object
 const ec2 = new AWS.EC2({apiVersion: '2016-11-15'});
 
 const params = {
