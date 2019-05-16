@@ -7,9 +7,8 @@ AWS.config.update({region:'us-west-2'});
 //create EC2 service object
 const ec2 = new AWS.EC2({apiVersion: '2016-11-15'});
 
-const params = {
-  DryRun:false,  
- };
+//empty params object, needed to pass into describeSubnets function
+const params = {};
 
 ec2.describeSubnets(params, function(err, data) {
   if (err) {
