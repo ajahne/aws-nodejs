@@ -15,15 +15,7 @@ ec2.describeSubnets(params, function(err, data) {
   if (err) {
     console.log(err, err.stack); // an error occurred
   } else {
-    console.log('success');
-    fs.writeFile('data.json', JSON.stringify(data, null, ' '), (err) => {
-      if (err) {
-        throw err;
-      }
-      console.log('The file has been saved');
-    });
-    console.log('After writing, but before callback');
-    // console.log(data);           // successful response
+    console.log(data);           // successful response
   }  
 });
 
