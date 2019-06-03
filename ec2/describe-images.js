@@ -53,7 +53,8 @@ ec2.describeImages(params, function(err, data) {
     console.log(err, err.stack);  
   } else {                        // successful response
     sortByCreationDate(data);
-    console.log(data);           
+    console.log(data);
+    // to print the most recent AMI console.log(data.Images[0]);
   }  
 });
 
