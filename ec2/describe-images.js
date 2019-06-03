@@ -29,11 +29,31 @@ const params = {
   ]  
  };
 
+function sortByCreationDate(data) {
+  const images = data.Images;
+  images.sort(function(a,b) {
+    const dateA = a["CreationDate"];
+    const dateB = b["CreationDate"];
+    if (dateA < dateB) {
+      return -1;
+    }
+    if (dateA > dateB) {
+      return 1;
+    }
+    //dates are equal
+    return 0;
+  });
+
+  //reverse so we have the images sorted by date in descending order
+  images.reverse();
+}
+
 ec2.describeImages(params, function(err, data) {
-  if (err) {
-    console.log(err, err.stack); // an error occurred
-  } else {
-    console.log(data);           // successful response
+  if (err) {                      // an error occurred
+    console.log(err, err.stack);  
+  } else {                        // successful response
+    sortByCreationDate(data);
+    console.log(data);           
   }  
 });
 
