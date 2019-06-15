@@ -9,7 +9,7 @@ Install AWS SDK
 npm install aws-sdk
 ```
 
-To set up your credentials, follw [this guide](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/loading-node-credentials-shared.html).
+To set up your credentials, follow [this guide](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/loading-node-credentials-shared.html).
 
 ## Running a file
 ```
