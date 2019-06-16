@@ -1,10 +1,10 @@
-# AWS NodeJS
-AWS NodeJS SDK examples for your IAC needs.
+# AWS Node.js
+AWS Node.js SDK examples for your IAC needs.
 
 ## Setup
-_Assumes nodejs is installed_
+_Assumes node.js is installed_
 
-Install AWS SDK
+Install the AWS SDK
 ```
 npm install aws-sdk
 ```
